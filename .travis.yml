@@ -3,3 +3,7 @@ before_script:
   - gem install jekyll
   - gem install percy-cli
 script: jekyll build && percy snapshot _site/
+branches:
+  only:
+    - /.*/
+    - gh-pages
